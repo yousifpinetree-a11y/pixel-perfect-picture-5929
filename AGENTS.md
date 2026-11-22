@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application architecture
+- Keep investigation sample data and filtering in browser-safe domain modules; this frontend prototype must not imply connected backend services.
+- Use one shared investigation workspace across leaf routes, with session-scoped opening access, so navigation preserves the cinematic entry flow.
+- Define all investigation visual styles and semantic tokens in src/styles.css and expose interactive variants through the shared Button.
